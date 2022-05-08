@@ -7,9 +7,13 @@
   --team-section-bg-color: rgba(245, 244, 250, 1);
 }
 
-body {
-  color: var(--primary-text-color);
-  font-family: "Roboto";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 ul {
@@ -32,8 +36,31 @@ a:active {
   text-decoration: none;
 }
 
-footer {
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 15px;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto";
+}
+
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 15px 25px;
+}
+
+.footer {
   background-color: var(--secondary-bg-color);
+  padding: 60px 954px 60px 15px;
 }
 
 .accent-logo {
@@ -55,6 +82,8 @@ footer {
 
 .main-title {
   background-color: var(--secondary-bg-color);
+  padding: 200px 252px;
+  text-align: center;
 }
 
 .order-button {
@@ -64,14 +93,13 @@ footer {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
   cursor: pointer;
+  width: 200px;
+  height: 50px;
 }
 
 .main-title .text {
@@ -79,9 +107,28 @@ footer {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin-bottom: 30px;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 294px;
+  padding: 0;
+  margin: 0 331px 0 93px;
+}
+
+.auth-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 307px;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav .link {
@@ -110,6 +157,19 @@ footer {
   color: var(--button-bg-color);
 }
 
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.feature-list li {
+  width: 270px;
+}
+
 .feature-list .title {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -126,13 +186,26 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.about .title {
+.about-title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.about-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.about-images img {
+  display: block;
 }
 
 .team {
@@ -146,6 +219,15 @@ footer {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .team-member {
@@ -153,10 +235,12 @@ footer {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
 }
 
 .team-member .photo {
   border-radius: 0px;
+  margin-bottom: 30px;
 }
 
 .team-member .name {
@@ -167,6 +251,7 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 .team-member .position {
@@ -176,6 +261,20 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   margin: auto;
+  margin-bottom: 30px;
+}
+
+.contacts {
+  text-align: left;
+  width: 231px;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: -9px;
+}
+
+.contacts li {
+  margin-bottom: 9px;
 }
 
 .contacts a {
@@ -188,6 +287,23 @@ footer {
 
 .contacts .location {
   color: var(--primary-bg-color);
+}
+
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.portfolio-buttons li {
+  margin-right: 8px;
+}
+
+.portfolio-buttons li:last-child {
+  margin-right: 0px;
 }
 
 .portfolio-button {
@@ -213,9 +329,29 @@ footer {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
 .portfolio-item {
-  border: 1px solid rgba(238, 238, 238, 1);
-  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item img {
+  display: block;
+}
+
+.portfolio-item div {
+  border-width: 0px 1px 1px;
+  border-style: solid;
+  border-color: rgba(238, 238, 238, 1);
+  padding: 20px 24px;
 }
 
 .portfolio-item .title {
@@ -225,6 +361,7 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   margin: auto;
+  margin-bottom: 4px;
 }
 
 .portfolio-item .description {
